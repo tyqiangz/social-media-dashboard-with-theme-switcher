@@ -5,66 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="styles/index.css"/>
 </head>
 <body>
-  <main>
-    <div class="black-border grid-container">
-      <div class="black-border grid-item">
-      Social Media Dashboard
-      <br/>
-      Total Followers: <span>23,004</span>
-      </div>
-      <div class="black-border grid-item">
-      Dark Mode
-        <div class="black-border theme-change-button">
-          <div class="black-border theme-change-button-circle"></div>
+  <div class=" top-background"></div>
+  <div class="grid-container">
+    <header class=" header">
+      <div>Social Media Dashboard</div>
+      <div>Total Followers <span>23,004</span></div>
+    </header>
+    <div class=" dark-mode-section">
+      <span>Dark Mode</span>
+      <label class=" switch">
+        <input type="checkbox">
+        <span class="slider">switch</span>
+      </label>
+    </div>
+    <div class="facebook-big">
+      <div class="facebook-top-border"></div>
+      <div class=" top-content">
+        <div class="">
+          <img src="images/icon-facebook.svg" alt="facebook-icon"/>
+          <span class="">@nathanf</span>
+        </div>
+        <div class="">1987</div>
+        <div class="">FOLLOWERS</div>
+        <div class="">
+          <span class="up-icon"></span>
+          <span class="positive-percentage">12 Today</span>
         </div>
       </div>
-      <div class="black-border grid-item">
-      facebook
-      </div>
-      <div class="black-border grid-item">
-      twitter
-      </div>
-      <div class="black-border grid-item">
-      instagram
-      </div>
-      <div class="black-border grid-item">
-      youtube
-      </div>
-      <div class="black-border grid-item">
-      Overview - Today
-      </div>
-      <div class="black-border grid-item">
-      facebook-1
-      </div>
-      <div class="black-border grid-item">
-      facebook-2
-      </div>
-      <div class="black-border grid-item">
-      instagram-1
-      </div>
-      <div class="black-border grid-item">
-      instagram-2
-      </div>
-      <div class="black-border grid-item">
-      twitter-1
-      </div>
-      <div class="black-border grid-item">
-      twitter-2
-      </div>
-      <div class="black-border grid-item">
-      youtube-1
-      </div>
-      <div class="black-border grid-item">
-      youtube-2
+    </div>
+    <div class="twitter-big">
+      <div class="twitter-top-border"></div>
+      <div class="top-content">
+        <div class="">
+          <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+          <span class="">@nathanf</span>
+        </div>
+        <div class="">1044</div>
+        <div class="">FOLLOWERS</div>
+        <div class="">
+          <span>Up</span>
+          <span class="positive-percentage"> 99 Today</span>
+        </div>
       </div>
     </div>
-  </main>
+    <div class="instagram-big">
+      <div class="instagram-top-border"></div>
+      <div class="top-content">
+        <div class="">
+          <img src="images/icon-instagram.svg" alt="instagram-icon"/>
+          <span>@realnathanf</span>
+        </div>
+        <div class="">11k</div>
+        <div class="">FOLLOWERS</div>
+        <div class="">
+          <span>Up</span>
+          <span class="positive-percentage"> 1099 Today</span>
+        </div>
+      </div>
+    </div>
+    <div class="youtube-big">
+      <div class="youtube-top-border"></div>
+      <div class="top-content">
+        <div class="">
+          <img src="images/icon-youtube.svg" alt="youtube-icon"/>
+          <span>Nathan F.</span>
+        </div>
+        <div class="">8239</div>
+        <div class="">SUBSCRIBERS</div>
+        <div class="">
+          <span>Down</span>
+          <span class="negative-percentage"> 144 Today</span>
+        </div>
+      </div>
+    </div>
+    <div class=" subheader">Overview - Today</div>
+    <div class=" facebook-small-1">
+      <div>
+        <div>Page Views</div>
+        <img src="images/icon-facebook.svg" alt="facebook-icon"/>
+      </div>
+      <div>
+        <div>87</div>
+        <div class="positive-percentage">Up 3%</div>
+      </div>
+    </div>
+    <div class=" facebook-small-2">
+      <div>
+        <div>Likes</div>
+        <img src="images/icon-facebook.svg" alt="facebook-icon"/>
+      </div>
+      <div>
+        <div>52</div>
+        <div class="negative-percentage">Down 2%</div>
+      </div>
+    </div>
+    <div class=" instagram-small-1">
+      <div>
+        <div>Likes</div>
+        <img src="images/icon-instagram.svg" alt="instagram-icon"/>
+      </div>
+      <div>
+        <div>5462</div>
+        <div class="positive-percentage">Up 2257%</div>
+      </div>
+    </div>
+    <div class=" instagram-small-2">
+      <div>
+        <div>Profile Views</div>
+        <img src="images/icon-instagram.svg" alt="instagram-icon"/>
+      </div>
+      <div>
+        <div>52k</div>
+        <div class="positive-percentage">Up 1375%</div>
+      </div>
+    </div>
+    <div class=" twitter-small-1">
+      <div>
+        <div>Retweets</div>
+        <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+      </div>
+      <div>
+        <div>117</div>
+        <div class="positive-percentage">Up 303%</div>
+      </div>
+    </div>
+    <div class=" twitter-small-2">
+      <div>
+        <div>Likes</div>
+        <img src="images/icon-twitter.svg" alt="twitter-icon"/>
+      </div>
+      <div>
+        <div>507</div>
+        <div class="positive-percentage">Up 553%</div>
+      </div>
+    </div>
+    <div class=" youtube-small-1">
+      <div>
+        <div>Likes</div>
+        <img src="images/icon-youtube.svg" alt="youtube-icon"/>
+      </div>
+      <div>
+        <div>107</div>
+        <div class="negative-percentage">Down 19%</div>
+      </div>
+    </div>
+    <div class=" youtube-small-2">
+      <div>
+        <div>Total Views</div>
+        <img src="images/icon-youtube.svg" alt="youtube-icon"/>
+      </div>
+      <div>
+        <div>1407</div>
+        <div class="negative-percentage">Down 12%</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
