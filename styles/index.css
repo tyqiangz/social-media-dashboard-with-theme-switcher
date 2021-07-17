@@ -94,6 +94,11 @@ body {
   padding: 3% 10% 1% 10%;
   grid-column-gap: 3%;
   overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 header > div:nth-child(1) {
     font-weight: 700;
