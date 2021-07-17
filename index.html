@@ -11,16 +11,17 @@
   <script defer src="js/index.js"></script>
 </head>
 <body>
-  <div class="top-background dark-theme light-theme"></div>
+  <div class="fullscreen-background"></div>
+  <div class="top-background"></div>
   <div class="grid-container">
     <header class="header">
-      <div class="dark-theme light-theme">Social Media Dashboard</div>
-      <div class="dark-theme light-theme">Total Followers <span>23,004</span></div>
+      <div class="title">Social Media Dashboard</div>
+      <div class="title-stats">Total Followers: 23,004</div>
     </header>
-    <div class="dark-mode-section dark-theme light-theme">
+    <div class="dark-mode-section">
       <span>Dark Mode</span>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" class="toggler">
         <span class="slider"></span>
       </label>
     </div>
@@ -31,9 +32,9 @@
           <img src="images/icon-facebook.svg" alt="facebook-icon"/>
           <span class="social-media-handle">@nathanf</span>
         </div>
-        <div class="">1987</div>
-        <div class="">FOLLOWERS</div>
-        <div class="">
+        <div class="big-number">1987</div>
+        <div class="big-number-type">FOLLOWERS</div>
+        <div>
           <span class="positive-percentage up-icon">Up</span>
           <span class="positive-percentage">12 Today</span>
         </div>
@@ -46,8 +47,8 @@
           <img src="images/icon-twitter.svg" alt="twitter-icon"/>
           <span class="social-media-handle">@nathanf</span>
         </div>
-        <div class="">1044</div>
-        <div class="">FOLLOWERS</div>
+        <div class="big-number">1044</div>
+        <div class="big-number-type">FOLLOWERS</div>
         <div class="">
           <span class="positive-percentage">Up</span>
           <span class="positive-percentage"> 99 Today</span>
@@ -61,8 +62,8 @@
           <img src="images/icon-instagram.svg" alt="instagram-icon"/>
           <span class="social-media-handle">@realnathanf</span>
         </div>
-        <div class="">11k</div>
-        <div class="">FOLLOWERS</div>
+        <div class="big-number">11k</div>
+        <div class="big-number-type">FOLLOWERS</div>
         <div class="">
           <span class="positive-percentage">Up</span>
           <span class="positive-percentage"> 1099 Today</span>
@@ -76,8 +77,8 @@
           <img src="images/icon-youtube.svg" alt="youtube-icon"/>
           <span class="social-media-handle">Nathan F.</span>
         </div>
-        <div class="">8239</div>
-        <div class="">SUBSCRIBERS</div>
+        <div class="big-number">8239</div>
+        <div class="big-number-type">SUBSCRIBERS</div>
         <div class="">
           <span class="negative-percentage">Down</span>
           <span class="negative-percentage"> 144 Today</span>
@@ -87,81 +88,81 @@
     <div class="subheader">Overview - Today</div>
     <div class="facebook-small-1">
       <div>
-        <div>Page Views</div>
+        <div class="big-number-type">Page Views</div>
         <img src="images/icon-facebook.svg" alt="facebook-icon"/>
       </div>
       <div>
-        <div>87</div>
+        <div class="big-number">87</div>
         <div class="positive-percentage">Up 3%</div>
       </div>
     </div>
     <div class="facebook-small-2">
       <div>
-        <div>Likes</div>
+        <div class="big-number-type">Likes</div>
         <img src="images/icon-facebook.svg" alt="facebook-icon"/>
       </div>
       <div>
-        <div>52</div>
+        <div class="big-number">52</div>
         <div class="negative-percentage">Down 2%</div>
       </div>
     </div>
     <div class="instagram-small-1">
       <div>
-        <div>Likes</div>
+        <div class="big-number-type">Likes</div>
         <img src="images/icon-instagram.svg" alt="instagram-icon"/>
       </div>
       <div>
-        <div>5462</div>
+        <div class="big-number">5462</div>
         <div class="positive-percentage">Up 2257%</div>
       </div>
     </div>
     <div class="instagram-small-2">
       <div>
-        <div>Profile Views</div>
+        <div class="big-number-type">Profile Views</div>
         <img src="images/icon-instagram.svg" alt="instagram-icon"/>
       </div>
       <div>
-        <div>52k</div>
+        <div class="big-number">52k</div>
         <div class="positive-percentage">Up 1375%</div>
       </div>
     </div>
     <div class="twitter-small-1">
       <div>
-        <div>Retweets</div>
+        <div class="big-number-type">Retweets</div>
         <img src="images/icon-twitter.svg" alt="twitter-icon"/>
       </div>
       <div>
-        <div>117</div>
+        <div class="big-number">117</div>
         <div class="positive-percentage">Up 303%</div>
       </div>
     </div>
     <div class="twitter-small-2">
       <div>
-        <div>Likes</div>
+        <div class="big-number-type">Likes</div>
         <img src="images/icon-twitter.svg" alt="twitter-icon"/>
       </div>
       <div>
-        <div>507</div>
+        <div class="big-number">507</div>
         <div class="positive-percentage">Up 553%</div>
       </div>
     </div>
     <div class="youtube-small-1">
       <div>
-        <div>Likes</div>
+        <div class="big-number-type">Likes</div>
         <img src="images/icon-youtube.svg" alt="youtube-icon"/>
       </div>
       <div>
-        <div>107</div>
+        <div class="big-number">107</div>
         <div class="negative-percentage">Down 19%</div>
       </div>
     </div>
     <div class="youtube-small-2">
       <div>
-        <div>Total Views</div>
+        <div class="big-number-type">Total Views</div>
         <img src="images/icon-youtube.svg" alt="youtube-icon"/>
       </div>
       <div>
-        <div>1407</div>
+        <div class="big-number">1407</div>
         <div class="negative-percentage">Down 12%</div>
       </div>
     </div>

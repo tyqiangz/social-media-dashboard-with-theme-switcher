@@ -1,4 +1,4 @@
-theme_toggler = document.getElementsByTagName("input")[0];
+theme_toggler = document.getElementsByClassName("toggler")[0];
 theme_toggler.addEventListener("click", change_theme);
 
 // DARK THEME
@@ -14,61 +14,63 @@ LIGHTTHEME_DARK_GRAYISH_BLUE = "hsl(228, 12%, 44%)"
 LIGHTTHEME_VERY_DARK_BLUE = "hsl(230, 17%, 14%)"
 
 function change_theme() {
-    // light-theme by default, toggles between light theme and dark theme
-    var theme_changing_elements = document.getElementsByClassName("dark-theme");
-    // console.log([...theme_changing_elements][0].classList);
-    [...theme_changing_elements].forEach(element => {
-        element.classList.toggle("light-theme")
-    });
-    console.log([...theme_changing_elements]);
+    console.log(theme_toggler.checked);
+
+    title = document.getElementsByClassName("header")[0].children[0];
+    title_stats = document.getElementsByClassName("title-stats")[0];
+    subheader = document.getElementsByClassName("subheader")[0];
+    big_numbers = document.getElementsByClassName("big-number");
+    big_number_types = document.getElementsByClassName("big-number-type");
+    slider = document.getElementsByClassName("slider")[0];
+    
+    social_media_handles = document.getElementsByClassName("social-media-handle");
+    followers = document.getElementsByClassName("social-media-handle");
+    dark_mode_section = document.getElementsByClassName("dark-mode-section")[0];
+    big_cards = document.getElementsByClassName('top-content');
+    small_cards = document.querySelectorAll('[class*="small"]');
+    full_screen_background = document.getElementsByClassName('fullscreen-background')[0];
+    top_background = document.getElementsByClassName('top-background')[0];
+    console.log(big_cards);
+
+    // DARK THEME
+    if (theme_toggler.checked) {
+        [title, subheader, ...big_numbers].forEach(element => {
+            element.style.color = WHITE;
+        });
+
+        top_background.style.backgroundColor = DARKTHEME_VERY_DARK_BLUE;
+        slider.style.backgroundColor = DARKTHEME_VERY_DARK_BLUE;
+        full_screen_background.style.backgroundColor = DARKTHEME_VERY_DARK_BLUE;
+
+        // elements to change background-colour to DARKTHEME_DARK_DESATURATED_BLUE
+        [...big_cards, ...small_cards].forEach(element => {
+            element.style.backgroundColor = DARKTHEME_DARK_DESATURATED_BLUE;
+            element.addEventListener("mouseover", 
+                () => {element.style.boxShadow = "0 4px 8px 0 hsla(0, 0%, 100%, 0.2), 0 6px 20px 0 hsla(0, 0%, 100%, 0.19)"}
+            );
+            element.addEventListener("mouseout", 
+                () => {element.style.boxShadow = ""}
+            );
+        });
+        [dark_mode_section, title_stats, ...social_media_handles, ...big_number_types].forEach(element => {
+            element.style.color = DARKTHEME_DESATURATED_BLUE;
+        });
+    }
+    // LIGHT THEME
+    else {
+        [title, subheader, ...big_numbers].forEach(element => {
+            element.style.color = LIGHTTHEME_VERY_DARK_BLUE;
+        });
+
+        top_background.style.backgroundColor = LIGHTTHEME_VERY_PALE_BLUE;
+        full_screen_background.style.backgroundColor = WHITE;
+
+        // elements to change background-colour to DARKTHEME_DARK_DESATURATED_BLUE
+        [...big_cards, ...small_cards].forEach(element => {
+            element.style.backgroundColor = LIGHTTHEME_LIGHT_GRAYISH_BLUE;
+        });
+        [dark_mode_section, title_stats, ...social_media_handles, ...big_number_types].forEach(element => {
+            element.style.color = LIGHTTHEME_DARK_GRAYISH_BLUE;
+        });
+    }
 }
-
-// function change_theme() {
-//     console.log(theme_toggler.checked);
-//     title = document.getElementsByClassName("header")[0].children[0];
-//     total_followers = document.getElementsByClassName("header")[0].children[1];
-//     social_media_handles = document.getElementsByClassName("social-media-handle");
-
-//     dark_mode_section = document.getElementsByClassName("dark-mode-section")[0];
-//     big_cards = document.querySelectorAll('[class*="big"]');
-//     small_cards = document.querySelectorAll('[class*="small"]');
-//     top_background = document.getElementsByClassName('top-background')
-//     console.log(big_cards);
-
-//     // DARK THEME
-//     if (theme_toggler.checked) {
-//         title.style.color = WHITE;
-//         total_followers.style.color = DARKTHEME_DESATURATED_BLUE;
-//         dark_mode_section.style.color = DARKTHEME_DESATURATED_BLUE;
-
-//         top_background[0].style.backgroundColor = DARKTHEME_VERY_DARK_BLUE;
-
-//         big_cards.forEach(element => {
-//             element.style.backgroundColor = DARKTHEME_DARK_DESATURATED_BLUE;
-//             // element.style.color = WHITE;
-//         });
-//         small_cards.forEach(element => {
-//             element.style.backgroundColor = DARKTHEME_DARK_DESATURATED_BLUE;
-//             element.style.color = WHITE;
-//         });
-//         [...social_media_handles].forEach(element => {
-//             element.style.color = DARKTHEME_DESATURATED_BLUE;
-//         });
-//     }
-//     // LIGHT THEME
-//     else {
-//         title.style.color = LIGHTTHEME_VERY_DARK_BLUE;
-//         total_followers.style.color = LIGHTTHEME_VERY_DARK_BLUE;
-//         dark_mode_section.style.color = LIGHTTHEME_VERY_DARK_BLUE;
-//         top_background[0].style.backgroundColor = LIGHTTHEME_VERY_PALE_BLUE;
-
-//         big_cards.forEach(element => {
-//             element.style.backgroundColor = WHITE;
-//             element.style.color = LIGHTTHEME_VERY_DARK_BLUE;
-//         });
-//         small_cards.forEach(element => {
-//             element.style.backgroundColor = WHITE;
-//             element.style.color = LIGHTTHEME_VERY_DARK_BLUE;
-//         });
-//     }
-// }
